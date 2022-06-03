@@ -42,7 +42,7 @@ const addCard = async (src) => {
 }
 
 doButton.addEventListener('click', async () => {
-    await axios.get(`/do/`)
+    await axios.get(`/do`)
     .then((res) => {
         console.log(res.data)
         addCard(res.data)
@@ -52,7 +52,7 @@ doButton.addEventListener('click', async () => {
 
 
 eatButton.addEventListener('click', async () => {
-    await axios.get(`/eat/`)
+    await axios.get(`/eat`)
     .then((res) => {
         console.log(res.data)
         addCard(res.data)
@@ -62,7 +62,7 @@ eatButton.addEventListener('click', async () => {
 
 
 seeButton.addEventListener('click', async () => {
-    await axios.get(`/see/`)
+    await axios.get(`/see`)
     .then((res) => {
         console.log(res.data)
         addCard(res.data)
@@ -72,7 +72,7 @@ seeButton.addEventListener('click', async () => {
 
 
 learnButton.addEventListener('click', async () => {
-    await axios.get(`/learn/`)
+    await axios.get(`/learn`)
     .then((res) => {
         console.log(res.data)
         addCard(res.data)
@@ -82,7 +82,7 @@ learnButton.addEventListener('click', async () => {
 
 
 askButton.addEventListener('click', async () => {
-    await axios.get(`/ask/`)
+    await axios.get(`/ask`)
     .then((res) => {
         console.log(res.data)
         addCard(res.data)
@@ -92,7 +92,7 @@ askButton.addEventListener('click', async () => {
 
 
 dogButton.addEventListener('click', async () => {
-    await axios.get(`/dog/`)
+    await axios.get(`/dog`)
     .then((res) => {
         console.log(res.data)
         addCard(res.data)
